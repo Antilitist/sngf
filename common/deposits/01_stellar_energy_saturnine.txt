@@ -1,0 +1,528 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+################
+## Gas Giants ##
+################
+## I would separate these if I could, separating them by Jovian/Superjovian/Subjovian, but since I can't...
+## I took the simple way out: EVERY gas giant now yields terraforming gasses.
+
+sd_saturnine_energy_two = {
+   resources = {
+   energy = 2 
+   sr_terraform_gases = 1 
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+   }
+}
+
+sd_saturnine_energy_three = {
+   resources = {
+   energy = 2 
+   sr_terraform_gases = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+   }
+}
+
+sd_saturnine_energy_four = {
+   resources = {
+   energy = 3 
+   sr_terraform_gases = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 10000
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+   }
+}
+
+sd_saturnine_energy_five = {
+   resources = {
+   energy = 4 
+   sr_terraform_gases = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+   }
+}
+
+sd_saturnine_energy_six = {
+   resources = {
+   energy = 4 
+   sr_terraform_gases = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+   }
+}
+
+##############
+## LYTHURIC ##
+##############
+# Lythuric is 1/2 as likely as a normal gas giant, if in the Lythuric gas cluster.
+
+sd_saturnine_energy_two_lythuric = {
+   resources = {
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_lythuric = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+			factor = 2
+			planet = {
+				is_inside_nebula = yes
+			}
+		}
+	modifier = {
+			factor = 0
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_1 }
+			}
+		}
+   }
+}
+
+sd_saturnine_energy_three_lythuric = {
+   resources = {
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_lythuric = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+			factor = 2
+			planet = {
+				is_inside_nebula = yes
+			}
+		}
+	modifier = {
+			factor = 0
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_1 }
+			}
+		}
+   }
+}
+
+sd_saturnine_energy_four_lythuric = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_lythuric = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+			factor = 2
+			planet = {
+				is_inside_nebula = yes
+			}
+		}
+	modifier = {
+			factor = 0
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_1 }
+			}
+		}
+   }
+}
+
+sd_saturnine_energy_five_lythuric = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_lythuric = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+			factor = 2
+			planet = {
+				is_inside_nebula = yes
+			}
+		}
+	modifier = {
+			factor = 0
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_1 }
+			}
+		}
+   }
+}
+
+sd_saturnine_energy_six_lythuric = {
+   resources = { 
+   energy = 4 
+   sr_terraform_gases = 1
+   sr_lythuric = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 625
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+			factor = 2
+			planet = {
+				is_inside_nebula = yes
+			}
+		}
+	modifier = {
+			factor = 0
+			planet = {
+				NOT = { is_in_cluster = resource_cluster_1 }
+			}
+		}
+   }
+}
+
+###############
+## SATRAMENE ##
+###############
+# Satramene deposits are 1/10th as likely as a normal gas giant with a g, k or f-class star, but only
+# 1/40th as likely elsewhere.
+
+sd_saturnine_energy_two_satramene = {
+   resources = {
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_satramene = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 250
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+		factor = 0.25
+		solar_system = {
+			NOT =  {
+				OR = {
+					is_star_class = sc_g
+					is_star_class = sc_k
+					is_star_class = sc_f
+				}
+			}
+		}
+	}
+   }
+}
+
+sd_saturnine_energy_three_satramene = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_satramene = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 500
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+		factor = 0.25
+		solar_system = {
+			NOT =  {
+				OR = {
+					is_star_class = sc_g
+					is_star_class = sc_k
+					is_star_class = sc_f
+				}
+			}
+		}
+	}
+   }
+}
+
+sd_saturnine_energy_four_satramene = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_satramene = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1000
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+		factor = 0.25
+		solar_system = {
+			NOT =  {
+				OR = {
+					is_star_class = sc_g
+					is_star_class = sc_k
+					is_star_class = sc_f
+				}
+			}
+		}
+	}
+   }
+}
+
+sd_saturnine_energy_five_satramene = {
+   resources = { 
+   energy = 4 
+   sr_terraform_gases = 1
+   sr_satramene = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 250
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+		factor = 0.25
+		solar_system = {
+			NOT =  {
+				OR = {
+					is_star_class = sc_g
+					is_star_class = sc_k
+					is_star_class = sc_f
+				}
+			}
+		}
+	}
+   }
+}
+
+sd_saturnine_energy_six_satramene = {
+   resources = { 
+   energy = 6 
+   sr_terraform_gases = 1
+   sr_satramene = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 125
+       planet = {	is_planet_class = pc_gas_giant	}
+     }
+	 modifier = {
+		factor = 0.25
+		solar_system = {
+			NOT =  {
+				OR = {
+					is_star_class = sc_g
+					is_star_class = sc_k
+					is_star_class = sc_f
+				}
+			}
+		}
+	}
+   }
+}
+
+#########
+## ZRO ##
+#########
+# Zro deposits are 1/2 as likely as a non-Zro deposit, but require a nebula.
+
+sd_saturnine_energy_two_zro = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_zro = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+			planet = {
+				AND = {
+					is_planet_class = pc_gas_giant
+					is_inside_nebula = yes
+				}
+     }
+   }
+}
+}
+
+sd_saturnine_energy_three_zro = {
+   resources = { 
+   energy = 2 
+   sr_terraform_gases = 1
+   sr_zro = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+			planet = {
+				AND = {
+					is_planet_class = pc_gas_giant
+					is_inside_nebula = yes
+				}
+     }
+   }
+}
+}
+
+sd_saturnine_energy_four_zro = {
+   resources = {
+   energy = 4 
+   sr_terraform_gases = 1
+   sr_zro = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+			planet = {
+				AND = {
+					is_planet_class = pc_gas_giant
+					is_inside_nebula = yes
+				}
+     }
+   }
+}
+}
+
+sd_saturnine_energy_five_zro = {
+   resources = {
+   energy = 4 
+   sr_terraform_gases = 1
+   sr_zro = 1   
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+			planet = {
+				AND = {
+					is_planet_class = pc_gas_giant
+					is_inside_nebula = yes
+				}
+     }
+   }
+ }
+}
+
+sd_saturnine_energy_six_zro = {
+   resources = { 
+   energy = 6 
+   sr_terraform_gases = 1
+   sr_zro = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = {	weight = 100	}
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 625
+			planet = {
+				AND = {
+					is_planet_class = pc_gas_giant
+					is_inside_nebula = yes
+				}
+     }
+   }
+}
+}

@@ -1,0 +1,768 @@
+# Possible Deposit Variables
+# modifier - weight, will replace the weight value
+# modifier - factor, will multiply the weight value
+# resources, resource and amount
+# station = station class in orbit to gather
+# if you mix resources that are not supposed to be collected by an orbital station remember to put is_orbital_slot = no
+
+###################
+## Class A Stars ##
+###################
+# "Young," hot and full of power; Class A stars are really very good power sources.
+# Power levels of a Betharian II, III, and IV power plant.
+
+sd_solar_energy_a1 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_a_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_a2 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_a_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_a3 = {
+   resources = { energy = 4 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_a_star
+       }
+     }
+   }
+}
+
+###################
+## Class B Stars ##
+###################
+# Intense balls of fusion (even as stars go,) Class B stars are =exceptional= power sources.
+# Power levels of a Betharian III, IV, and surpassing a IV.
+
+sd_solar_energy_b1 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_b_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_b2 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_b_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_b3 = {
+   resources = { energy = 4}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_b_star
+       }
+     }
+   }
+}
+###################
+## Class F Stars ##
+###################
+# Compact and dense, F-class stars are really good power sources.
+# Equavilent to a Betharian II, III, and IV power station.
+
+sd_solar_energy_f1 = {
+   resources = { energy = 1 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_f_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_f2 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_f_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_f3 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_f_star
+       }
+     }
+   }
+}
+###################
+## Class G Stars ##
+###################
+# Just like Sol! Good for supporting life and sucking power out of.
+# Smaller and cooler than other stars, but still a freaking star, good for generating a lotta juice!
+
+sd_solar_energy_g1 = {
+   resources = { energy = 1 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_g_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_g2 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_g_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_g3 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_g_star
+       }
+     }
+   }
+}
+###################
+## Class K Stars ##
+###################
+# Cooler than the sun, on the galactic scale, a K-type star is the pacer, not the sprinter.
+# Unfortunately, on the scale of a few hundred years, a stellar sprinter is what a civilization wants.
+## For harvesting energy from, anyway.
+
+sd_solar_energy_k1 = {
+   resources = { energy = 1 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_k2 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_k3 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+
+###################
+## Class M Stars ##
+###################
+# A stellar 'slouch,' an M-class star is hardly worthless in terms of harvesting energy...
+## But it just doesn't have the same kick as a brighter, more intense ball of fusion.
+
+sd_solar_energy_m1 = {
+   resources = { energy = 1 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_m2 = {
+   resources = { energy = 2 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_m3 = {
+   resources = { energy = 3 }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_k_star
+       }
+     }
+   }
+}
+#################
+# Neutron Stars #
+#################
+## You can collect a lot of energy from a neutron star's intense radiation...
+## But you'd probably rather collect the science.
+## Still, I threw in some energy collection chances, representing the chances the star is thoroughly ordinary.
+# You will always get neutronium from a Neutron Star.
+
+sd_solar_energy_n1 = {
+   resources = { 
+   energy = 4
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_neutron_star
+       }
+     }
+   }
+}
+
+sd_solar_energy_n2 = {
+   resources = { 
+   energy = 6
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_neutron_star
+       }
+     }
+   }
+}
+
+###########
+# Pulsars #
+###########
+# Pulsars: Far more likely to give you research than an ordinary Neutron Star, with correspondingly less energy chance.
+# You will always get Neutronium from a Pulsar.
+
+
+sd_solar_energy_pulsar_1 = {
+   resources = { 
+   energy = 2 
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 500
+       planet = {
+           is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_energy_pulsar_2 = {
+   resources = { 
+   energy = 4 
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 500
+       planet = {
+           is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+##################################################
+## Neutron and Pulsar Combined Science Entries. ##
+##################################################
+# Physics Research #
+# You will always get Neutronium from a Neutron or Pulsar.
+
+sd_solar_science_neutron_pulsar_1 = {
+   resources = { 
+   physics_research = 2 
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_2 = {
+   resources = { 
+   physics_research = 3 
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_3 = {
+   resources = { 
+   physics_research = 4 
+   sr_neutronium = 1
+   }
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+# Physics + Engineering Research #
+
+sd_solar_science_neutron_pulsar_1a = {
+   resources = {	physics_research = 2
+					engineering_research = 2	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_2a = {
+   resources = {	physics_research = 3 
+					engineering_research = 3	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_3a = {
+   resources = {	physics_research = 4 
+					engineering_research = 4	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_1b = {
+   resources = {	physics_research = 2
+					engineering_research = 1	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_2b = {
+   resources = {	physics_research = 3 
+					engineering_research = 2	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+sd_solar_science_neutron_pulsar_3b = {
+   resources = {	physics_research = 4 
+					engineering_research = 3	
+					sr_neutronium = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {
+           is_planet_class = pc_neutron_star
+		   is_planet_class = pc_pulsar
+       }
+     }
+   }
+}
+
+###############
+# Black Holes #
+###############
+# You're not getting energy out of a black hole.
+# You will, however, get Dark Matter.
+
+# Physics Alone #
+
+sd_solar_science_black_hole_1 = {
+   resources = { 
+				physics_research = 3 
+				sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_2 = {
+   resources = { 
+				physics_research = 4 
+				sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_3 = {
+   resources = { 
+				physics_research = 5 
+				sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+# Physics + Engineering
+
+sd_solar_science_black_hole_1a = {
+   resources = {	physics_research = 2
+					engineering_research = 2	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_2a = {
+   resources = {	physics_research = 3 
+					engineering_research = 3	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_3a = {
+   resources = {	physics_research = 4 
+					engineering_research = 4	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_1b = {
+   resources = {	physics_research = 2
+					engineering_research = 1	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 1250
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_2b = {
+   resources = {	physics_research = 3 
+					engineering_research = 2	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 5000
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
+
+sd_solar_science_black_hole_3b = {
+   resources = {	physics_research = 4 
+					engineering_research = 3	
+					sr_dark_matter = 1
+				}
+   station = shipclass_mining_station
+   orbital_weight = { weight = 1000 }
+   
+   drop_weight = {
+     weight = 0
+     modifier = {
+       weight = 2500
+       planet = {	is_planet_class = pc_black_hole	}
+     }
+   }
+}
